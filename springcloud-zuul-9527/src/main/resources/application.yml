@@ -1,0 +1,24 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1.zdk.com:7001/eureka/,http://eureka2.zdk.com:7002/eureka/,http://eureka3.zdk.com:7003/eureka/
+  instance:
+    instance-id: springcloud-zuul
+    prefer-ip-address: true
+info: 
+  app.name: zdk-springcloud
+  company.name: www.zdk.com
+
+zuul:
+  routes: 
+    mydept.serviceId: springcloud-provider-dept
+    mydept.path: /mydept/**
+  ignored-services: "*"
+  prefix: /zdk  # 配置公共前缀

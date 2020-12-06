@@ -1,0 +1,31 @@
+server:
+  port: 8001
+
+#mybatis
+mybatis:
+  type-aliases-package: com.zdk.springcloud.pojo
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  application:
+    name: springcloud-provider-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 1111
+
+# Eureka的配置
+eureka:
+  client:
+    service-url: 
+      defaultZone: http://eureka1.zdk.com:7001/eureka/,http://eureka2.zdk.com:7002/eureka/,http://eureka3.zdk.com:7003/eureka/
+  instance:
+    instance-id: springcloud-dept-hystrix-8001
+    
+# 配置服务信息
+info:
+  app.name: zdk-springcloud
+  company.name: blog.zdk.com
