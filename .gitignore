@@ -1,0 +1,18 @@
+# Project exclude paths
+/springcloud-api/target/
+/springcloud-consumer-dept-80/target/
+/springcloud-consumer-dept-feign/target/
+/springcloud-consumer-hystrix-dashboard/target/
+/springcloud-eureka-7001/target/
+/springcloud-provider-dept-8001/target/
+/springcloud-provider-dept-hystrix-8001/target/
+/springcloud-zuul-9527/target/
+/springcloud-zuul-9527/springcloud-zuul-9527.iml
+/springcloud.iml
+/.idea/
+/springcloud-api/springcloud-api.iml
+/springcloud-consumer-dept-80/springcloud-consumer-dept-80.iml
+/springcloud-consumer-dept-feign/springcloud-consumer-dept-feign.iml
+/springcloud-consumer-hystrix-dashboard/springcloud-consumer-hystrix-dashboard.iml
+/springcloud-eureka-7001/springcloud-eureka-7001.iml
+/springcloud-provider-dept-8001/springcloud-provider-dept-8001.iml
